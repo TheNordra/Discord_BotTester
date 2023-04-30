@@ -43,12 +43,12 @@ export const loadEvents = async() =>{
         if(eventFile.event.once){
             client.once(
                 eventFile.event.name,
-                eventFile.action,
+                eventFile.action(),
             )
         }else{
             client.on(
                 eventFile.event.name,
-                eventFile.action,
+                eventFile.action(),
             )
         }
     }

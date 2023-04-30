@@ -1,7 +1,7 @@
 import {Events} from "discord.js"
 
 export const event = {
-    name : Events.clientReady,
+    name : Events.ClientReady,
     once : 1,   //for 'loader.js' loadEvents.client.<type(once, on)>
 }
 
