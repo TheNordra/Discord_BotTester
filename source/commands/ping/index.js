@@ -7,4 +7,5 @@ export const command = new SlashCommandBuilder()
 
 export const action = async(ctx) =>{
     await ctx.reply('pong!')
+    console.log('Ping Pong!')
 }
